@@ -2718,7 +2718,7 @@
     <string name="show_enter_key_summary">强制键盘显示回车而不是表情符号键</string>
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">LOSP 版本</string>
+    <string name="mod_version">Carbon 版本</string>
     <string name="mod_version_default">未知</string>
 
     <!-- Launches Dev Tools -->
