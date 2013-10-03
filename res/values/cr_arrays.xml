@@ -474,8 +474,6 @@
     <!-- Wake on button -->
     <string-array name="entries_wakeon_button">
         <item>@string/wakeon_button_power</item>
-        <item>@string/wakeon_button_home</item>
-        <item>@string/wakeon_button_both</item>
     </string-array>
 
     <string-array name="values_wakeon_button" translatable="false">

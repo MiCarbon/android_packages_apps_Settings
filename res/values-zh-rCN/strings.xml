@@ -3530,4 +3530,8 @@
     <string name="kill_app_longpress_back">长按关闭应用</string>
     <string name="kill_app_longpress_back_summary">长按返回键强制关闭所处应用</string>
     <string name="carbon_fibers_title">碳控制</string>
+
+    <string name="pref_wakeon_button_title">唤醒键</string>
+    <string name="pref_wakeon_button_summary">按下%1$s可以唤醒你的设备</string>
+    <string name="wakeon_button_power">电源键唤醒</string>
 </resources>
