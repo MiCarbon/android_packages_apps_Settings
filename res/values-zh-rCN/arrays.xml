@@ -30,13 +30,13 @@
     <item msgid="8392017019801393511">"全部"</item>
   </string-array>
     <string-array name="screen_timeout_entries">
-        <item>15 秒</item>
-        <item>30 秒</item>
-        <item>1 分钟</item>
-        <item>2 分钟</item>
-        <item>5 分钟</item>
-        <item>10 分钟</item>
-        <item>30 分钟</item>
+        <item>无操作 15 秒后</item>
+        <item>无操作 30 秒后</item>
+        <item>无操作 1 分钟后</item>
+        <item>无操作 2 分钟后</item>
+        <item>无操作 5 分钟后</item>
+        <item>无操作 10 分钟后</item>
+        <item>无操作 30 分钟后</item>
         <item>保持常亮</item>
     </string-array>
   <string-array name="dream_timeout_entries">
