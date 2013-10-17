@@ -2092,11 +2092,13 @@
     <string name="performance_settings_warning_title">请谨慎前进</string>
     <string name="performance_settings_warning">这些设置完全是用于测试与实验. 这里的改变将直接影响系统性能, 并可能导致系统不稳定, 数据丢失, 与硬件损伤.\n\n如果您更改了这里的设置, 我们请求您不要向我们提交错误报告.</string>
 
+    <!-- Performance Settings : Set on boot option -->
+    <string name="performance_set_on_boot">重新启动后保持设置</string>
+    <string name="performance_set_on_boot_summary">在重启后保持当前模式设置</string>
+
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
     <string name="processor_title">处理器</string>
-    <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">修改CPU模式和频率</string>
 
     <!-- Performance Settings : Processor settings sub items -->
     <string name="cpu_cur_freq_title">当前CPU频率</string>
@@ -2106,23 +2108,25 @@
     <string name="cpu_min_freq_summary">%s</string>
     <string name="cpu_max_freq_title">最高CPU频率</string>
     <string name="cpu_max_freq_summary">%s</string>
-    <string name="cpu_set_on_boot">启动时设置</string>
-    <string name="cpu_set_on_boot_summary">启动时恢复CPU设置</string>
 
     <!-- Performance Settings : I/O scheduler settings title -->
     <string name="io_scheds_title">I/O 调度器</string>
-    <!-- Performance Settings : I/O scheduler settings summary. -->
-    <string name="io_scheds_summary">修改 I/O 调度器</string>
 
     <!-- Performance Settings : I/O scheduler settings sub items -->
     <string name="io_sched_title">I/O 调度器</string>
     <string name="io_sched_summary">%S</string>
-    <string name="io_sched_set_on_boot">启动时设置</string>
-    <string name="io_sched_set_on_boot_summary">启动时恢复 I/O 调度器设置</string>
+
+    <!-- Performance Settings : Performance profile settings -->
+    <string name="perf_profile_title">运行模式</string>
+    <string name="perf_profile_summary" translatable="false">%s</string>
+
+    <!-- Performance Settings : Performance profile modes -->
+    <string name="perf_profile_pwrsv">省电模式</string>
+    <string name="perf_profile_bal">日常模式</string>
+    <string name="perf_profile_perf">性能模式</string>
 
     <!-- Memory Management -->
     <string name="memory_management_title">内存管理</string>
-    <string name="memory_management_summary">自定义内存的使用情况来改变系统的性能</string>
     <!-- zRam -->
     <string name="pref_zram_title">zRam</string>
     <string name="pref_zram_summary">压缩内存来增加虚拟容量(需要重启)</string>
