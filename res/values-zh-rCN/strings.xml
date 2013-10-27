@@ -2086,45 +2086,11 @@
     <string name="toggleWimax">WiMAX</string>
     <string name="toggleNfc">NFC</string>
     <!-- Performance settings  -->
-    <string name="performance_settings_title">性能</string>
+    <string name="performance_settings_title">运行模式</string>
 
-    <!-- Performance Settings : Warning dialog  -->
-    <string name="performance_settings_warning_title">请谨慎前进</string>
-    <string name="performance_settings_warning">这些设置完全是用于测试与实验. 这里的改变将直接影响系统性能, 并可能导致系统不稳定, 数据丢失, 与硬件损伤.\n\n如果您更改了这里的设置, 我们请求您不要向我们提交错误报告.</string>
-
-    <!-- Performance Settings : Set on boot option -->
-    <string name="performance_set_on_boot">重新启动后保持设置</string>
-    <string name="performance_set_on_boot_summary">在重启后保持当前模式设置</string>
-
-    <!-- Performance Settings : Processor Settings -->
-    <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">处理器</string>
-
-    <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">当前CPU频率</string>
-    <string name="cpu_governors_title">CPU 模式</string>
-    <string name="cpu_governors_summary">%S</string>
-    <string name="cpu_min_freq_title"> 最低CPU频率</string>
-    <string name="cpu_min_freq_summary">%s</string>
-    <string name="cpu_max_freq_title">最高CPU频率</string>
-    <string name="cpu_max_freq_summary">%s</string>
-
-    <!-- Performance Settings : I/O scheduler settings title -->
-    <string name="io_scheds_title">I/O 调度器</string>
-
-    <!-- Performance Settings : I/O scheduler settings sub items -->
-    <string name="io_sched_title">I/O 调度器</string>
-    <string name="io_sched_summary">%S</string>
-
-    <!-- Performance Settings : Performance profile settings -->
-    <string name="perf_profile_title">运行模式</string>
-    <string name="perf_profile_summary" translatable="false">%s</string>
-
-    <!-- Performance Settings : Performance profile modes -->
-    <string name="perf_profile_pwrsv">省电模式</string>
-    <string name="perf_profile_bal">日常模式</string>
-    <string name="perf_profile_perf">性能模式</string>
-
+    <!-- Performance settings  -->
+    <string name="performance_settings">性能中心</string>
+    
     <!-- Memory Management -->
     <string name="memory_management_title">内存管理</string>
     <!-- zRam -->
@@ -2902,5 +2868,6 @@
     <string name="lockgesture_too_many_failed_confirmation_attempts_header">错误的尝试次数过多!</string>
     <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="number">%d</xliff:g> 秒后重试。</string>
-
+    <!-- Data Connection -->
+    <string name="data_settings_title">数据连接</string>
 </resources>
