@@ -244,7 +244,7 @@
     <string name="slide_lock_delay_30m">30 minutes</string>
 
     <!-- Performance settings  -->
-    <string name="performance_settings_title">Performance</string>
+    <string name="performance_settings">Performance Control</string>
 
     <!-- Performance Settings : Warning dialog  -->
     <string name="performance_settings_warning_title">Proceed with Caution</string>
@@ -789,4 +789,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- GPS download data over wi-fi only -->
     <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi-Fi networks</string>
 
+    <!-- Data Connection Entry -->
+    <string name="data_settings_title">Data Connection</string>
 </resources>
