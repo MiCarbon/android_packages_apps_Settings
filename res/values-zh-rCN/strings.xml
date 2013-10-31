@@ -2868,4 +2868,7 @@
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="number">%d</xliff:g> 秒后重试。</string>
     <!-- Data Connection -->
     <string name="data_settings_title">数据连接</string>
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">高级重启</string>
+    <string name="advanced_reboot_summary">选择是否在锁屏界面中的重启选单中显示双系统重启等选项</string>
 </resources>
