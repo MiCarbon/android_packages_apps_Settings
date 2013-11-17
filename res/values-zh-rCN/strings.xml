@@ -2046,4 +2046,129 @@
     <string name="user_image_take_photo" msgid="1280274310152803669">"拍照"</string>
     <string name="user_image_choose_photo" msgid="7940990613897477057">"从图库中选择照片"</string>
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
+
+    <!-- **** CARBON ADDITIONS START **** -->
+    <!-- Hostname setting -->
+    <string name="device_hostname">设备网络名</string>
+
+    <!-- Setting checkbox title for root access -->
+    <string name="root_access">ROOT访问</string>
+    <string name="root_access_warning_title">允许ROOT权限访问?</string>
+    <string name="root_access_warning_message">允许应用获取ROOT权限是非常危险的，可能危及系统安全性!</string>
+    <string name="root_access_none">禁用</string>
+    <string name="root_access_apps">仅应用</string>
+    <string name="root_access_adb">仅ADB</string>
+    <string name="root_access_all">应用和ADB</string>
+
+    <!-- CYANOGENMOD EDITS START -->
+
+    <string name="ok">确认</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">安静时段</string>
+    <string name="quiet_hours_summary">设置设备应当保持安静的时段</string>
+    <string name="quiet_hours_note_title">注意</string>
+    <string name="quiet_hours_note_summary">安静时段不影响来电</string>
+    <string name="quiet_hours_enabled">启用安静时段</string>
+    <string name="quiet_hours_enabled_on">安静时段将强制执行</string>
+    <string name="quiet_hours_enabled_off">通知不受影响</string>
+    <string name="quiet_hours_start">安静开始时间</string>
+    <string name="quiet_hours_start_summary">何时开始强制安静时段</string>
+    <string name="quiet_hours_end">结束安静时间</string>
+    <string name="quiet_hours_end_summary">何时结束安静时段</string>
+    <string name="quiet_hours_mute">静音通知</string>
+    <string name="quiet_hours_mute_on">没有声音会被播放</string>
+    <string name="quiet_hours_mute_off">声音将正常播放</string>
+    <string name="quiet_hours_still">禁用震动</string>
+    <string name="quiet_hours_still_on">设备将不会震动</string>
+    <string name="quiet_hours_still_off">设备将照常震动</string>
+    <string name="quiet_hours_dim">禁用通知灯</string>
+    <string name="quiet_hours_dim_on">通知灯将被禁用</string>
+    <string name="quiet_hours_dim_off">通知灯将照常运行</string>
+    <string name="quiet_hours_haptic">禁用触摸反馈</string>
+    <string name="quiet_hours_haptic_on">触摸反馈将被禁用</string>
+    <string name="quiet_hours_haptic_off">触摸反馈将照常运行</string>
+    <string name="quiet_hours_active_from">激活 从</string>
+    <string name="quiet_hours_active_to">到</string>
+
+    <!-- time range preference -->
+    <string name="start_time_title">Start</string>
+    <string name="end_time_title">End</string>
+
+    <!-- About phone screen,  setting option name-->
+    <string name="mod_version">Carbon 版本</string>
+    <string name="mod_version_default">未知</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">编译日期</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">CPU</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">内存</string>
+    <!-- About phone screen, status item label -->
+
+    <!-- CARBON Settings  -->
+    <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
+    <string name="header_category_carbon">MICARBON</string>
+
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">主题</string>
+
+    <!-- Performance settings  -->
+    <string name="performance_settings_title">性能</string>
+
+    <!-- Performance Settings : Warning dialog  -->
+    <string name="performance_settings_warning_title">请谨慎前进</string>
+    <string name="performance_settings_warning">这些设置完全是用于测试与实验. 这里的改变将直接影响系统性能, 并可能导致系统不稳定, 数据丢失, 与硬件损伤.\n\n如果您更改了这里的设置, 我们请求您不要向我们提交错误报告.</string>
+
+    <!-- Performance Settings : Processor Settings -->
+    <!-- Performance Settings : Processor settings title -->
+    <string name="processor_title">处理器</string>
+    <!-- Performance Settings : Processor settings summary. -->
+    <string name="processor_summary">修改CPU模式和频率</string>
+
+    <!-- Performance Settings : Processor settings sub items -->
+    <string name="cpu_cur_freq_title">当前CPU频率</string>
+    <string name="cpu_governors_title">CPU 模式</string>
+    <string name="cpu_governors_summary">%S</string>
+    <string name="cpu_min_freq_title"> 最低CPU频率</string>
+    <string name="cpu_min_freq_summary">%s</string>
+    <string name="cpu_max_freq_title">最高CPU频率</string>
+    <string name="cpu_max_freq_summary">%s</string>
+    <string name="cpu_set_on_boot">启动时设置</string>
+    <string name="cpu_set_on_boot_summary">启动时恢复CPU设置</string>
+
+    <!-- Performance Settings : I/O scheduler settings title -->
+    <string name="io_scheds_title">I/O 调度器</string>
+    <!-- Performance Settings : I/O scheduler settings summary. -->
+    <string name="io_scheds_summary">修改 I/O 调度器</string>
+
+    <!-- Performance Settings : I/O scheduler settings sub items -->
+    <string name="io_sched_title">I/O 调度器</string>
+    <string name="io_sched_summary">%S</string>
+    <string name="io_sched_set_on_boot">启动时设置</string>
+    <string name="io_sched_set_on_boot_summary">启动时恢复 I/O 调度器设置</string>
+
+    <!-- Memory Management -->
+    <string name="memory_management_title">内存管理</string>
+    <string name="memory_management_summary">自定义内存的使用情况来改变系统的性能</string>
+    <!-- zRam -->
+    <string name="pref_zram_title">zRam</string>
+    <string name="pref_zram_summary">压缩内存来增加虚拟容量(需要重启)</string>
+    <!-- Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">允许内存清理</string>
+    <string name="pref_purgeable_assets_summary">内存位图清理可以允许在需要时获得更多内存(需要重启)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">表面优化</string>
+    <string name="dithering_no_dither">禁用抖动</string>
+    <string name="dithering_color_banding">色带修复 (默认)</string>
+    <string name="dithering_blur_effect">修复色带和模糊效果</string>
+
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">16位透明度</string>
+    <string name="pref_use_16bpp_alpha_summary">更高的图形性能，但影响效果(需要重启)</string>
+
+        <!-- Launches Dev Tools -->
+    <string name="development_tools_title">启动工具</string>
 </resources>
