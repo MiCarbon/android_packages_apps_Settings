@@ -356,7 +356,8 @@ public class Settings extends PreferenceActivity
         PrintJobSettingsFragment.class.getName(),
         TrustedCredentialsSettings.class.getName(),
         PaymentSettings.class.getName(),
-        KeyboardLayoutPickerFragment.class.getName()
+        KeyboardLayoutPickerFragment.class.getName(),
+        BlacklistSettings.class.getName(),
     };
 
     @Override
@@ -518,6 +519,7 @@ public class Settings extends PreferenceActivity
                 ProfilesSettings.class.getName().equals(fragmentName) ||
                 ProfileConfig.class.getName().equals(fragmentName) ||
                 AppGroupConfig.class.getName().equals(fragmentName) ||
+                HomeSettings.class.getName().equals(fragmentName) ||
                 LocationSettings.class.getName().equals(fragmentName) ||
                 ToggleAccessibilityServicePreferenceFragment.class.getName().equals(fragmentName) ||
                 PrintSettingsFragment.class.getName().equals(fragmentName) ||
@@ -869,7 +871,7 @@ public class Settings extends PreferenceActivity
             int headerType = getHeaderType(header);
             View view = null;
 
-            if (convertView == null) {
+            if (convertView == null || headerType == HEADER_TYPE_SWITCH) {
                 holder = new HeaderViewHolder();
                 switch (headerType) {
                     case HEADER_TYPE_CATEGORY:
@@ -1130,4 +1132,5 @@ public class Settings extends PreferenceActivity
     public static class PaymentSettingsActivity extends Settings { /* empty */ }
     public static class PrintSettingsActivity extends Settings { /* empty */ }
     public static class PrintJobSettingsActivity extends Settings { /* empty */ }
+    public static class BlacklistSettingsActivity extends Settings { /* empty */ }
 }
