@@ -257,6 +257,23 @@
 
     <string name="app_security_title">应用安全</string>
 
+    <!-- Privacy Guard -->
+    <string name="privacy_guard_switch_label">启用隐私卫士</string>
+    <string name="privacy_guard_dlg_title">启用隐私卫士?</string>
+    <string name="privacy_guard_dlg_text">当隐私卫士启用后,应用将无法再访问个人数据,如联系人,信息或者通话记录.</string>
+    <string name="privacy_guard_dlg_system_app_text">对内置应用启用隐私卫士后,应用将无法访问或提供个人数据,这将可能导致其他应用出现异常.</string>
+    <string name="privacy_guard_default_title">默认启用</string>
+    <string name="privacy_guard_default_summary">为新安装的应用启用隐私卫士，保护您的隐私</string>
+    <string name="privacy_guard_manager_title">隐私卫士</string>
+    <string name="privacy_guard_manager_summary">管理哪些应用可以访问您的个人数据和其他应用权限</string>
+    <string name="privacy_guard_no_user_apps">没有安装任何应用</string>
+    <string name="privacy_guard_filter_does_not_match">没有安装含有相关敏感权限的应用</string>
+    <string name="privacy_guard_help_title">帮助</string>
+    <string name="privacy_guard_reset_title">重置</string>
+    <string name="privacy_guard_help_text">在此屏幕中,只要轻点一下,您就可以选择哪些应用应该启用隐私卫士,选定的应用将无法再访问您的个人数据,如联系人,信息或者通话记录.长按其中一条项目查看该应用的详细信息.\n\n默认情况下内置应用将不会被显示.如果您要显示他们或者要过滤出通过特定权限访问个人数据的应用,请在菜单中调整相应的设置.</string>
+    <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
+    <string name="privacy_guard_manager_filter_permissions">选择要显示的权限</string>
+
      <!-- Blacklist preferences -->
     <string name="blacklist_title">黑名单</string>
     <string name="blacklist_edit_dialog_title">编辑黑名单中的条目</string>
@@ -287,4 +304,14 @@
     <string name="remove_blacklist_number_title">移除号码</string>
     <string name="remove_blacklist_entry">您确定要移除该黑名单条目吗?</string>
     <string name="select_contact">选取联系人</string>
+
+        <!-- Setting checkbox summary for displaying USB debugging notification -->
+    <string name="adb_notify">USB 调试通知</string>
+    <string name="adb_notify_summary">当连接USB调试时显示一条永久性通知</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">网络ADB调试</string>
+    <string name="adb_over_network_summary">启用通过网络的 TCP/IP 调试 (Wi-Fi, USB 网络). 重启时此选项自动关闭</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">警告：网络 ADB 调试启用后,您的设备将会在已连接的网络(包括 GSM 数据网络)上被视为是开放的,并且有可能被侵入!\n\n请仅在您所信任的网络上使用此功能.\n\n您确实要启用该功能吗?</string>
 </resources>
