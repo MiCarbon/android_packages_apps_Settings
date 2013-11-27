@@ -298,7 +298,6 @@
     <string name="blacklist_policy_block_calls">屏蔽来电</string>
     <string name="blacklist_policy_block_messages">屏蔽短信</string>
 
-
     <!-- Blacklist management -->
     <string name="add_blacklist_number">添加号码</string>
     <string name="remove_blacklist_number_title">移除号码</string>
@@ -314,4 +313,17 @@
     <string name="adb_over_network_summary">启用通过网络的 TCP/IP 调试 (Wi-Fi, USB 网络). 重启时此选项自动关闭</string>
     <!-- Warning for Adb over Network -->
     <string name="adb_over_network_warning">警告：网络 ADB 调试启用后,您的设备将会在已连接的网络(包括 GSM 数据网络)上被视为是开放的,并且有可能被侵入!\n\n请仅在您所信任的网络上使用此功能.\n\n您确实要启用该功能吗?</string>
+
+    <!-- Font size sample text. This needs to be a very short string, as it is shown in
+    multiple font sizes in a limited amount of space. -->
+    <string name="font_size_sample">示例</string>
+
+    <!-- Sms security limit -->
+    <string name="sms_security_check_limit_title">信息发送限制</string>
+    <string name="sms_security_check_limit_summary">应用可以在半小时内发送%d条短信而不请求许可</string>
+    <string name="sms_security_check_limit_default">30 (默认)</string>
+
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">返回键强制结束进程</string>
+    <string name="kill_app_longpress_back_summary">长按返回键以强制结束前台进程.</string>
 </resources>
