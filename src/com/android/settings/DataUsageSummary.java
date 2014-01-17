@@ -322,10 +322,15 @@ public class DataUsageSummary extends Fragment {
         // on parent container for inset.
         final boolean shouldInset = mListView.getScrollBarStyle()
                 == View.SCROLLBARS_OUTSIDE_OVERLAY;
-        mInsetSide = 0;
+        if (shouldInset) {
+            mInsetSide = view.getResources().getDimensionPixelOffset(
+                    com.android.internal.R.dimen.preference_fragment_padding_side);
+        } else {
+            mInsetSide = 0;
+        }
 
         // adjust padding around tabwidget as needed
-        prepareCustomPreferencesList(container, view, mListView, false);
+        prepareCustomPreferencesList(container, view, mListView, true);
 
         mTabHost.setup();
         mTabHost.setOnTabChangedListener(mTabListener);
@@ -1188,8 +1193,8 @@ public class DataUsageSummary extends Fragment {
         final String rangePhrase = formatDateRange(context, start, end);
 
         final int summaryRes;
-        if (TAB_MOBILE.equals(mCurrentTab) || TAB_3G.equals(mCurrentApp)
-                || TAB_4G.equals(mCurrentApp)) {
+        if (TAB_MOBILE.equals(mCurrentTab) || TAB_3G.equals(mCurrentTab)
+                || TAB_4G.equals(mCurrentTab)) {
             summaryRes = R.string.data_usage_total_during_range_mobile;
         } else {
             summaryRes = R.string.data_usage_total_during_range;

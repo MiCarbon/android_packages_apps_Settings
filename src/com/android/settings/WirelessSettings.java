@@ -247,7 +247,7 @@ public class WirelessSettings extends RestrictedSettingsFragment
 
     private boolean isSmsSupported() {
         // Some tablet has sim card but could not do telephony operations. Skip those.
-        return (mTm.getPhoneType() != TelephonyManager.PHONE_TYPE_NONE);
+        return mTm.isSmsCapable();
     }
 
     @Override
@@ -333,6 +333,16 @@ public class WirelessSettings extends RestrictedSettingsFragment
             removePreference(KEY_MOBILE_NETWORK_SETTINGS);
             removePreference(KEY_MANAGE_MOBILE_PLAN);
         }
+        // Remove Mobile Network Settings and Manage Mobile Plan
+        // if config_show_mobile_plan sets false.
+        boolean isMobilePlanEnabled = this.getResources().getBoolean(
+                R.bool.config_show_mobile_plan);
+        if (!isMobilePlanEnabled) {
+            Preference pref = findPreference(KEY_MANAGE_MOBILE_PLAN);
+            if (pref != null) {
+                removePreference(KEY_MANAGE_MOBILE_PLAN);
+            }
+        }
         protectByRestrictions(KEY_MOBILE_NETWORK_SETTINGS);
         protectByRestrictions(KEY_MANAGE_MOBILE_PLAN);
 
@@ -367,9 +377,9 @@ public class WirelessSettings extends RestrictedSettingsFragment
 
         // Enable link to CMAS app settings depending on the value in config.xml.
         PackageManager pm = getPackageManager();
-        boolean hasPhoneFeatures = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+        // boolean hasPhoneFeatures = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
         boolean isCellBroadcastAppLinkEnabled = false;
-        if (hasPhoneFeatures) {
+        if (isSmsSupported()) {
             isCellBroadcastAppLinkEnabled = this.getResources().getBoolean(
                     com.android.internal.R.bool.config_cellBroadcastAppLinks);
             try {
