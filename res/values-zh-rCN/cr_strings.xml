@@ -14,6 +14,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setting_countrycode_title">WLAN 区域代码</string>
+    <string name="wifi_setting_countrycode_summary">指定 WLAN 使用的区域码</string>
+    <string name="wifi_setting_countrycode_error">设置区域码时遇到了问题。</string>
+    <string name="wifi_setting_priority_title">WLAN 连接优先级</string>
+    <string name="wifi_setting_priority_summary">设置各个 WLAN 网络的优先连接顺序</string>
+    <string name="wifi_menu_forget_all">取消保存所有连接过的网络</string>
+    
     <!-- Sound settings screen -->
     <string name="ring_mode_title">响铃模式</string>
     <string name="ring_mode_normal">默认</string>
@@ -253,9 +260,135 @@
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">高级重启</string>
-    <string name="advanced_reboot_summary">在重启菜单中显示双系统重启等选项</string>
+    <string name="advanced_reboot_summary">在重启菜单中显示重启到恢复模式等选项</string>
 
     <string name="app_security_title">应用安全</string>
+    
+        <!-- Hostname setting -->
+    <string name="device_hostname">设备网络名</string>
+
+    <!-- Setting checkbox title for root access -->
+    <string name="root_access">ROOT访问</string>
+    <string name="root_access_warning_title">允许ROOT权限访问?</string>
+    <string name="root_access_warning_message">允许应用获取ROOT权限是非常危险的，可能危及系统安全性!</string>
+    <string name="root_access_none">禁用</string>
+    <string name="root_access_apps">仅应用</string>
+    <string name="root_access_adb">仅ADB</string>
+    <string name="root_access_all">应用和ADB</string>
+
+    <!-- CYANOGENMOD EDITS START -->
+
+    <string name="ok">确认</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">安静时段</string>
+    <string name="quiet_hours_summary">设置设备应当保持安静的时段</string>
+    <string name="quiet_hours_note_title">注意</string>
+    <string name="quiet_hours_note_summary">安静时段不影响来电</string>
+    <string name="quiet_hours_enabled">启用安静时段</string>
+    <string name="quiet_hours_enabled_on">安静时段将强制执行</string>
+    <string name="quiet_hours_enabled_off">通知不受影响</string>
+    <string name="quiet_hours_start">安静开始时间</string>
+    <string name="quiet_hours_start_summary">何时开始强制安静时段</string>
+    <string name="quiet_hours_end">结束安静时间</string>
+    <string name="quiet_hours_end_summary">何时结束安静时段</string>
+    <string name="quiet_hours_mute">静音通知</string>
+    <string name="quiet_hours_mute_on">没有声音会被播放</string>
+    <string name="quiet_hours_mute_off">声音将正常播放</string>
+    <string name="quiet_hours_still">禁用震动</string>
+    <string name="quiet_hours_still_on">设备将不会震动</string>
+    <string name="quiet_hours_still_off">设备将照常震动</string>
+    <string name="quiet_hours_dim">禁用通知灯</string>
+    <string name="quiet_hours_dim_on">通知灯将被禁用</string>
+    <string name="quiet_hours_dim_off">通知灯将照常运行</string>
+    <string name="quiet_hours_haptic">禁用触摸反馈</string>
+    <string name="quiet_hours_haptic_on">触摸反馈将被禁用</string>
+    <string name="quiet_hours_haptic_off">触摸反馈将照常运行</string>
+    <string name="quiet_hours_active_from">激活 从</string>
+    <string name="quiet_hours_active_to">到</string>
+
+    <!-- time range preference -->
+    <string name="start_time_title">Start</string>
+    <string name="end_time_title">End</string>
+
+    <!-- About phone screen,  setting option name-->
+    <string name="mod_version">Carbon 版本</string>
+    <string name="mod_version_default">未知</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">编译日期</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">CPU</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">内存</string>
+    <!-- About phone screen, status item label -->
+
+    <!-- CARBON Settings  -->
+    <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
+    <string name="header_category_carbon">个性化</string>
+
+    <string name="carbon_fibers_title">碳控制</string>
+    
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">主题</string>
+
+    <!-- Performance settings  -->
+    <string name="performance_settings_title">性能</string>
+
+    <!-- Performance Settings : Warning dialog  -->
+    <string name="performance_settings_warning_title">请谨慎前进</string>
+    <string name="performance_settings_warning">这些设置完全是用于测试与实验. 这里的改变将直接影响系统性能, 并可能导致系统不稳定, 数据丢失, 与硬件损伤.\n\n如果您更改了这里的设置, 我们请求您不要向我们提交错误报告.</string>
+
+    <!-- Performance Settings : Processor Settings -->
+    <!-- Performance Settings : Processor settings title -->
+    <string name="processor_title">处理器</string>
+    <!-- Performance Settings : Processor settings summary. -->
+    <string name="processor_summary">修改CPU模式和频率</string>
+
+    <!-- Performance Settings : Processor settings sub items -->
+    <string name="cpu_cur_freq_title">当前CPU频率</string>
+    <string name="cpu_governors_title">CPU 模式</string>
+    <string name="cpu_governors_summary">%S</string>
+    <string name="cpu_min_freq_title"> 最低CPU频率</string>
+    <string name="cpu_min_freq_summary">%s</string>
+    <string name="cpu_max_freq_title">最高CPU频率</string>
+    <string name="cpu_max_freq_summary">%s</string>
+    <string name="cpu_set_on_boot">启动时设置</string>
+    <string name="cpu_set_on_boot_summary">启动时恢复CPU设置</string>
+
+    <!-- Performance Settings : I/O scheduler settings title -->
+    <string name="io_scheds_title">I/O 调度器</string>
+    <!-- Performance Settings : I/O scheduler settings summary. -->
+    <string name="io_scheds_summary">修改 I/O 调度器</string>
+
+    <!-- Performance Settings : I/O scheduler settings sub items -->
+    <string name="io_sched_title">I/O 调度器</string>
+    <string name="io_sched_summary">%S</string>
+    <string name="io_sched_set_on_boot">启动时设置</string>
+    <string name="io_sched_set_on_boot_summary">启动时恢复 I/O 调度器设置</string>
+
+    <!-- Memory Management -->
+    <string name="memory_management_title">内存管理</string>
+    <string name="memory_management_summary">自定义内存的使用情况来改变系统的性能</string>
+    <!-- zRam -->
+    <string name="pref_zram_title">zRam</string>
+    <string name="pref_zram_summary">压缩内存来增加虚拟容量(需要重启)</string>
+    <!-- Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">允许内存清理</string>
+    <string name="pref_purgeable_assets_summary">内存位图清理可以允许在需要时获得更多内存(需要重启)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">表面优化</string>
+    <string name="dithering_no_dither">禁用抖动</string>
+    <string name="dithering_color_banding">色带修复 (默认)</string>
+    <string name="dithering_blur_effect">修复色带和模糊效果</string>
+
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">16位透明度</string>
+    <string name="pref_use_16bpp_alpha_summary">更高的图形性能，但影响效果(需要重启)</string>
+
+        <!-- Launches Dev Tools -->
+    <string name="development_tools_title">启动工具</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">启用隐私卫士</string>
@@ -273,6 +406,7 @@
     <string name="privacy_guard_help_text">在此屏幕中,只要轻点一下,您就可以选择哪些应用应该启用隐私卫士,选定的应用将无法再访问您的个人数据,如联系人,信息或者通话记录.长按其中一条项目查看该应用的详细信息.\n\n默认情况下内置应用将不会被显示.如果您要显示他们或者要过滤出通过特定权限访问个人数据的应用,请在菜单中调整相应的设置.</string>
     <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
     <string name="privacy_guard_manager_filter_permissions">选择要显示的权限</string>
+    <string name="privacy_guard_advanced_settings_title">高级</string>
 
      <!-- Blacklist preferences -->
     <string name="blacklist_title">黑名单</string>
@@ -306,14 +440,17 @@
 
         <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify">USB 调试通知</string>
-    <string name="adb_notify_summary">当连接USB调试时显示一条永久性通知</string>
+    <string name="adb_notify_summary">当连接USB调试时显示一条不可清除通知</string>
 
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">网络ADB调试</string>
     <string name="adb_over_network_summary">启用通过网络的 TCP/IP 调试 (Wi-Fi, USB 网络). 重启时此选项自动关闭</string>
     <!-- Warning for Adb over Network -->
     <string name="adb_over_network_warning">警告：网络 ADB 调试启用后,您的设备将会在已连接的网络(包括 GSM 数据网络)上被视为是开放的,并且有可能被侵入!\n\n请仅在您所信任的网络上使用此功能.\n\n您确实要启用该功能吗?</string>
-
+    
+    <!-- Lockscreen quick unlock -->
+    <string name="lockscreen_quick_unlock_control_title">快速解锁</string>
+    <string name="lockscreen_quick_unlock_control_summary">当PIN/密码输入正确时自动解锁而无需触摸确认按钮</string>
     <!-- Font size sample text. This needs to be a very short string, as it is shown in
     multiple font sizes in a limited amount of space. -->
     <string name="font_size_sample">示例</string>
@@ -322,8 +459,74 @@
     <string name="sms_security_check_limit_title">信息发送限制</string>
     <string name="sms_security_check_limit_summary">应用可以在半小时内发送%d条短信而不请求许可</string>
     <string name="sms_security_check_limit_default">30 (默认)</string>
+    
+        <!-- Category title for Charging sounds (Power state change) specific Settings.
+         [CHAR LIMIT=40] -->
+    <string name="power_notifications_category_title">充电时提示</string>
+
+    <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
+    <string name="power_notifications_enable_title">启用</string>
+    <string name="power_notifications_enable_summary">当连接到充电器或拔掉充电器时播放声音</string>
+    <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
+    <string name="power_notifications_vibrate_title">震动</string>
+    <!-- Sound settings, Charging sounds ringtone selection, preference label -->
+    <string name="power_notifications_ringtone_title">通知音</string>
+    <!-- Sound settings, charging sounds label for ringtone == none -->
+    <string name="power_notifications_ringtone_silent">静音</string>
+
+    <!-- Delete apn confirmation dialog message -->
+    <string name="confirm_delete_apn">此条 APN 将被删除.</string>
+
+    <!-- Lockscreen widget settings -->
+    <string name="lockscreen_widgets_title">小部件</string>
+    <string name="lockscreen_camera_widget_title">启用相机小部件</string>
+    <string name="lockscreen_camera_widget_summary">在锁屏界面上显示安全的相机小部件（解锁前无法查看您已拍摄的照片）</string>
+    <string name="lockscreen_maximize_widgets_title">最大化小部件</string>
+    <string name="lockscreen_maximize_widgets_summary">当屏幕开启时显示最大化的小部件</string>
+    <string name="lockscreen_disable_hints_title">不显示初始页面指示</string>
+    <string name="lockscreen_disable_hints_summary">屏幕开启时且在竖屏锁屏界面下不显示当前小部件两旁小部件的边缘部分</string>
+    <string name="lockscreen_use_widget_container_carousel_title">启用旋转木马动画</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">竖屏下切换小部件时使用旋转木马动画Use carousel animation in portrait when switching between lock screen widgets</string>
 
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">返回键强制结束进程</string>
     <string name="kill_app_longpress_back_summary">长按返回键以强制结束前台进程.</string>
+    
+    <!-- Low battery warning policy -->
+    <string name="pref_low_battery_warning_policy_title">低电量警告</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">电量低时的提示</string>
+    <string name="low_battery_warning_policy_popup_sound">弹窗和声音</string>
+    <string name="low_battery_warning_policy_notif_sound">通知和声音</string>
+    <string name="low_battery_warning_policy_popup">仅弹窗提示</string>
+    <string name="low_battery_warning_policy_notif">仅通知提示</string>
+    <string name="low_battery_warning_policy_sound">仅声音提示</string>
+    <string name="battery_prefs_title">选项</string>
+    <string name="battery_stats_title">统计数据</string>
+    
+    <!-- Development shortcut -->
+    <string name="development_shortcut_title">开发用快捷方式</string>
+    <string name="development_shortcut_summary">在最近运行应用列表和通知栏中长按应用/通知时添加「清除数据」和「强制关闭」选项</string>
+    
+    <!-- USB Mass Storage -->
+    <string name="usb_mass_storage_title">大容量存储(UMS)</string>
+    <string name="usb_mass_storage_summary">将您的SD卡挂载为一个闪存设备来让您能在SD卡和电脑间传输文件</string>
+    <string name="storage_rescan_media">重新扫描存储设备中的媒体</string>
+    <string name="storage_rescan_media_complete">扫描完成</string>
+    
+    <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
+    <string name="custom_runtime_warning_title">警告</string>
+    <string name="custom_runtime_warning_message">ART并非由i碳提供支持. 此项设置仅供实验性使用，其可能存在有「使系统运行不稳定」、「造成应用崩溃」、「数据丢失」「使系统无法启动」等诸多可能. 访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; 获取更多信息.&lt;br/&gt;&lt;br/&gt;我们希望您在启用ART作为运行时不要提交Bug报告.&lt;br/&gt;&lt;br/&gt;A您确定要把运行时从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>更改为<xliff:g id="new" example="libart.so">%2$s</xliff:g>吗?</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">打乱PIN输入面板的数字顺序</string>
+    <string name="lock_numpad_random_dialog_title">PIN面板随机排序</string>
+    <string name="lock_numpad_random_off">不使用</string>
+    <string name="lock_numpad_random_always">一直</string>
+    <string name="lock_numpad_random_on_request">点击「重排」按钮时</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">系统启动时媒体扫描器行为</string>
+    <string name="media_scanner_on_boot_enabled">自动扫描媒体</string>
+    <string name="media_scanner_on_boot_ask">询问是否扫描(使用通知)</string>
+    <string name="media_scanner_on_boot_disabled">不扫描媒体</string>
 </resources>
