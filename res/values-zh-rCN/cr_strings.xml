@@ -14,18 +14,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General strings -->
+    <string name="enabled">已开启</string>
+    <string name="volume">音量</string>
+    
     <string name="wifi_setting_countrycode_title">WLAN 区域代码</string>
     <string name="wifi_setting_countrycode_summary">指定 WLAN 使用的区域码</string>
     <string name="wifi_setting_countrycode_error">设置区域码时遇到了问题。</string>
     <string name="wifi_setting_priority_title">WLAN 连接优先级</string>
     <string name="wifi_setting_priority_summary">设置各个 WLAN 网络的优先连接顺序</string>
     <string name="wifi_menu_forget_all">取消保存所有连接过的网络</string>
-    
-    <!-- Sound settings screen -->
-    <string name="ring_mode_title">响铃模式</string>
-    <string name="ring_mode_normal">默认</string>
-    <string name="ring_mode_vibrate">震动</string>
-    <string name="ring_mode_mute">静音</string>
 
     <string name="increasing_ring_title">铃声渐强</string>
     <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
@@ -93,7 +91,7 @@
     <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_connectionoverrides_title">连接覆盖</string>
     <string name="profile_volumeoverrides_title">音量覆盖</string>
-    <string name="profile_vibratoroverrides_title">震动覆盖</string>
+    <string name="profile_vibratoroverrides_title">振动覆盖</string>
     <string name="connection_state_disabled">禁用</string>
     <string name="connection_state_enabled">启用</string>
     <string name="volume_override_summary">设为</string>
@@ -117,7 +115,7 @@
     <string name="sound_mode">通知模式</string>
     <string name="ringer_mode">铃声</string>
     <string name="lights_mode">灯光</string>
-    <string name="vibrate_mode">震动</string>
+    <string name="vibrate_mode">振动</string>
     <string name="choose_soundtone">选择通知音</string>
     <string name="choose_ringtone">选择铃声</string>
 
@@ -167,6 +165,39 @@
     <string name="toggleWimax">WiMAX</string>
     <string name="toggleNfc">NFC</string>
 
+    <!-- Sound volumes panel -->
+    <string name="volume_ring_only_description">铃声</string>
+    <string name="link_volume_ringtones">铃声和通知音量保持一致</string>
+    <string name="link_volume_mutes">静音模式下不发出通知音</string>
+    <string name="volume_keys_control_ring_stream">音量键控制铃声音量</string>
+
+    <!-- Ring mode -->
+    <string name="ring_mode_title">响铃模式</string>
+    <string name="ring_mode_normal">默认</string>
+    <string name="ring_mode_vibrate">振动</string>
+    <string name="ring_mode_mute">静音</string>
+
+    <!-- Volume panel style -->
+    <string name="volume_overlay_title">音量面板风格</string>
+    <string name="volume_overlay_single">单行</string>
+    <string name="volume_overlay_expandable">可展开式</string>
+    <string name="volume_overlay_expanded">多行</string>
+    <string name="volume_overlay_none">无</string>
+
+    <!-- Automatation and effects category -->
+    <string name="automation_effects_title">自动与音效</string>
+
+    <!-- Convert sound to vibration toggle -->
+    <string name="notification_convert_sound_to_vibration_title">有通知时振动</string>
+    <string name="notification_convert_sound_to_vibration_summary">在振动模式开启时,所有通知都将会发出振动(不受应用设置影响)</string>
+
+    <!-- Vibrate during phone calls -->
+    <string name="notification_vibrate_during_calls_title">来电时振动</string>
+    <string name="notification_vibrate_during_calls_summary">有来电时设备将会轻柔地振动</string>
+
+    <!-- Volume adjustment sound -->
+    <string name="volume_adjust_sounds_enable_title">音量调节音</string>
+    <string name="volume_adjust_sounds_enable_summary">调节声音大小时播放声音以感知具体大小</string>
 
     <!-- Lights settings screen, notification light settings -->
     <string name="display_lights_settings_title">显示和灯光</string>
@@ -181,6 +212,10 @@
     <string name="notification_light_default_value">默认</string>
     <string name="notification_light_missed_call_title">未接来电</string>
     <string name="notification_light_voicemail_title">语音邮件</string>
+    
+        <!-- Turn on display when power connected; turn off display when power disconnected -->
+    <string name="wake_when_plugged_or_unplugged_title">连接充电器时唤醒</string>
+    <string name="wake_when_plugged_or_unplugged_summary">连接或拔出充电器时开启屏幕</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">编辑灯光设置</string>
@@ -257,12 +292,24 @@
     <string name="auto_brightness_sensitivity_medium">中</string>
     <string name="auto_brightness_sensitivity_high">高</string>
     <string name="auto_brightness_sensitivity_veryhigh">非常高</string>
+    
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">屏幕旋转</string>
+    <string name="display_rotation_disabled">不使用</string>
+    <string name="display_rotation_unit">度</string>
+    <string name="display_lockscreen_rotation_title">开启锁屏界面旋转</string></string>
+    <string name="display_rotation_category_title">旋转模式</string>
+    <string name="display_rotation_0_title">0 度</string>
+    <string name="display_rotation_90_title">90 度</string>
+    <string name="display_rotation_180_title">180 度</string>
+    <string name="display_rotation_270_title">270 度</string>
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">高级重启</string>
     <string name="advanced_reboot_summary">在重启菜单中显示重启到恢复模式等选项</string>
 
     <string name="app_security_title">应用安全</string>
+    <string name="security_unlock_category">快速解锁</string>
     
         <!-- Hostname setting -->
     <string name="device_hostname">设备网络名</string>
@@ -295,9 +342,9 @@
     <string name="quiet_hours_mute">静音通知</string>
     <string name="quiet_hours_mute_on">没有声音会被播放</string>
     <string name="quiet_hours_mute_off">声音将正常播放</string>
-    <string name="quiet_hours_still">禁用震动</string>
-    <string name="quiet_hours_still_on">设备将不会震动</string>
-    <string name="quiet_hours_still_off">设备将照常震动</string>
+    <string name="quiet_hours_still">禁用振动</string>
+    <string name="quiet_hours_still_on">设备将不会振动</string>
+    <string name="quiet_hours_still_off">设备将照常振动</string>
     <string name="quiet_hours_dim">禁用通知灯</string>
     <string name="quiet_hours_dim_on">通知灯将被禁用</string>
     <string name="quiet_hours_dim_off">通知灯将照常运行</string>
@@ -468,7 +515,7 @@
     <string name="power_notifications_enable_title">启用</string>
     <string name="power_notifications_enable_summary">当连接到充电器或拔掉充电器时播放声音</string>
     <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
-    <string name="power_notifications_vibrate_title">震动</string>
+    <string name="power_notifications_vibrate_title">振动</string>
     <!-- Sound settings, Charging sounds ringtone selection, preference label -->
     <string name="power_notifications_ringtone_title">通知音</string>
     <!-- Sound settings, charging sounds label for ringtone == none -->
@@ -515,7 +562,7 @@
     
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">警告</string>
-    <string name="custom_runtime_warning_message">ART并非由i碳提供支持. 此项设置仅供实验性使用，其可能存在有「使系统运行不稳定」、「造成应用崩溃」、「数据丢失」「使系统无法启动」等诸多可能. 访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; 获取更多信息.&lt;br/&gt;&lt;br/&gt;我们希望您在启用ART作为运行时不要提交Bug报告.&lt;br/&gt;&lt;br/&gt;A您确定要把运行时从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>更改为<xliff:g id="new" example="libart.so">%2$s</xliff:g>吗?</string>
+    <string name="custom_runtime_warning_message">ART并非由i碳提供支持. 此项设置仅供实验性使用，更换之后可能会有「使系统运行不稳定」、「造成应用崩溃」、「数据丢失」「使系统无法启动」等诸多可能. 访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;介绍ART&lt;/a&gt; 网页获取更多信息.&lt;br/&gt;&lt;br/&gt;我们希望您在启用ART作为运行时不要提交Bug报告.&lt;br/&gt;&lt;br/&gt;您确定要把运行时从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>改为<xliff:g id="new" example="libart.so">%2$s</xliff:g>吗?</string>
 
     <!-- Lockscreen pin shuffle -->
     <string name="lock_numpad_random_title">打乱PIN输入面板的数字顺序</string>
@@ -529,4 +576,57 @@
     <string name="media_scanner_on_boot_enabled">自动扫描媒体</string>
     <string name="media_scanner_on_boot_ask">询问是否扫描(使用通知)</string>
     <string name="media_scanner_on_boot_disabled">不扫描媒体</string>
+    
+        <!-- Screen recorder -->
+    <string name="screen_recorder_title">屏幕录像</string>
+    <string name="screen_recorder_summary">调整屏幕录像设置</string>
+    <string name="screen_recorder_video_dimensions_title">视频大小</string>
+    <string name="screen_recorder_video_bitrate_title">比特率</string>
+    <string name="screen_recorder_record_audio_title">记录声音</string>
+    <string name="screen_recorder_record_audio_summary">通过麦克风同时录下音频</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_50000000">50 MB/s</string>
+    <string name="screen_recorder_bitrate_title_100000000">100 MB/s</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_bitrate_50000000">50000000</string>
+    <string name="screen_recorder_bitrate_100000000">100000000</string>
+    
+    <!-- IME switcher notifcation -->
+    <string name="ime_switcher_notify">选择器通知</string>
+    <string name="ime_switcher_notify_summary">输入法弹出时显示一条通知以切换输入法</string>
+
+    <!-- Title for the accessibility preference to home button to answers a call. [CHAR LIMIT=35] -->
+    <string name="accessibility_home_button_answers_call_prerefence_title">主屏键应答来电</string>
+    
+    <string name="unlock_menu_unlock_title">菜单键解锁</string>
+    <string name="unlock_menu_unlock_summary">按下菜单键进入解锁界面/直接解锁设备(无密码时)</string>
+    <string name="unlock_home_unlock_title">主屏键解锁</string>
+    <string name="unlock_home_unlock_summary">按下主屏键进入解锁界面/直接解锁设备(无密码时)</string>
 </resources>
